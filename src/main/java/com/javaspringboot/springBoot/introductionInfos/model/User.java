@@ -1,4 +1,4 @@
-package com.javaspringboot.springBoot.model;
+package com.javaspringboot.springBoot.introductionInfos.model;
 
 public class User {
     private String name;
