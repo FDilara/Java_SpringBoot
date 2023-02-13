@@ -10,7 +10,7 @@ public class MessageController {
         return "Your message is: " + message;
     }*/
 
-    @GetMapping(path = "/message/{m}")
+    @GetMapping(path = "/message1/{m}")
     public String getMessage(@PathVariable("m") String message) {
         return "Your message is: " + message;
     }
@@ -30,7 +30,6 @@ public class MessageController {
     public String getMessage3(@PathVariable(name = "message", required = false) String message) {
         return "Your message is: " + message;
     }
-
 
     @GetMapping(path = "/message4")
     public String getMessage4(@RequestParam(name = "message", required = false, defaultValue = "My default message") String message) {

@@ -14,8 +14,8 @@ import org.springframework.context.annotation.FilterType;
                classes = CustomFilter.class))
 public class CustomCompScanConfiguration {
 
-    @Autowired
-    private MyClass6 myClass6;
+    //@Autowired
+    //private MyClass6 myClass6;
 
     @Autowired
     private MyClass5 myClass5;

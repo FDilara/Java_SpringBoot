@@ -20,9 +20,9 @@ In what situations is it used?
 
 -It can be used for methods that we did not write ourselves.
 
--Imagine there is a class to make a database connection. Some fields of this class need to be set as username, password, url. In this method, we can create an object by defining set operations. In this way, we can access that object from anywhere.
+-Imagine there is a class to write a database connection. Some fields of this class need to be set as username, password, url. In this method, we can create an object by defining set operations. In this way, we can access that object from anywhere.
 
 
 ![img.png](component_annotation.png)
 
-The picture above shows the annotations inherited from the Component annotation. Therefore, in the classes where those annotations are used, the object is created and added to the IoC Container.
+The picture above shows the annotations inherited from the "Component" annotation. Therefore, in the classes where those annotations are used, the object is created and added to the IoC Container.

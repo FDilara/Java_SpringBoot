@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class InjectionController {
 
     //Field Injection:
-    //The reference variable in a class is overwritten as "@Autowired" and injection takes place while the Spring project starts.
+    //The reference variable in a class is marked as "@Autowired" and injection takes place while the Spring project starts.
     //The reference variable in the class becomes the field of that class.
     //@Autowired
     //private First3Class first3Class;

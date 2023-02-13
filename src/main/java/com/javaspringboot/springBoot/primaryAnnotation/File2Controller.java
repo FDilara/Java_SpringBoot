@@ -10,14 +10,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(path = "/api")
 public class File2Controller {
     @Autowired
-    private Reader2 reader;
+    private Reader2 reader1;
     @Autowired
     @Qualifier("excelFile2Reader")
     private Reader2 reader2;
 
     @GetMapping(path = "/read2")
-    public String read() {
-        return this.reader.readFile() + " - " + this.reader2.readFile();
+    public String read2() {
+        return this.reader1.read2File() + " - " + this.reader2.read2File();
     }
 
 }

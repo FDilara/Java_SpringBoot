@@ -1,35 +1,38 @@
 # @Scope Annotation
 
-Bean'laerin hangi aşamalarda oluşturulması gerektiği belirtilen bir anotasyondur.
+It is an annotation that states in which phases the beans should be created.
 
 1.  **"singleton"** (Default) -> Only one object is created for each IoC Container.
    
     USE ->
 
-    @Scope(ConfigurableBeanFactory.SCOPE_SINGLETON) 
+    `@Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)`
                              
-    @Scope("singleton")
+    `@Scope("singleton")`
+
 
 2.  **"prototype"** -> A new object is created in each injection operation.
 
     USE ->
 
-    @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+    `@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)`
    
-    @Scope("prototype")
+    `@Scope("prototype")`
+
 
 3.  **"request"** -> A new object is created for each HTTP request.
 
     USE ->
 
-    @RequestScope
+    `@RequestScope`
                  
-    @Scope(value = WebApplicationContext.SCOPE_REQUEST, proxyMode = ScopedProxyMode.TARGET_CLASS)
+    `@Scope(value = WebApplicationContext.SCOPE_REQUEST, proxyMode = ScopedProxyMode.TARGET_CLASS)`
+
 
 4.  **"session"** -> An object is created for each HTTP session.
 
     USE ->         
 
-    @SessionScope
+    `@SessionScope`
     
-    @Scope(value = WebApplicationContext.SCOPE_SESSION, proxyMode = ScopedProxyMode.TARGET_CLASS)
+    `@Scope(value = WebApplicationContext.SCOPE_SESSION, proxyMode = ScopedProxyMode.TARGET_CLASS)`

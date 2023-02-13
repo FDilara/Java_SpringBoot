@@ -9,8 +9,8 @@ import org.springframework.stereotype.Component;
 public class PdfFile2Reader implements Reader2 {
 
     @Override
-    public String readFile() {
-        return "PDF File";
+    public String read2File() {
+        return "PDF 2 File";
     }
 
 }
